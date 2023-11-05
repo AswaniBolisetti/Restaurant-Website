@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Village Ruchulu</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style type="text/css">
+    #signup{
+      text-decoration:none;
+    }
+    body{
+      height:auto;
+      width: auto;
+      
+      background-repeat: no-repeat;
+      background-attachment: contain;
+    }
+    .container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height:100vh;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 15px;
+}
+  </style>
+	</head>
+<body >
+  <!--background-->
+  <!--background-image:linear-gradient(to top,#AAEC7A,#CFF6B3,white);-->
+<!-- Nav Bar -->	
+<nav class="navbar navbar-expand-lg p-2">
+	<!-- Image and text -->
+
+  <a class="navbar-brand" href="#">
+    <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\food.png" width="44" height="44" class="d-inline-block align-top" alt="logo">
+    <span style=" color: black; font-family: 'Brush Script MT',  cursive; font-size: 2rem;">Village Ruchulu</span>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="border:1px black solid; border-radius: 30%;">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-5">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 1.2rem; color: black;">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 1.2rem; color: black;" data-toggle="modal" data-target=".bd-example-modal-lg">Our Menu</a>
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+      <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\menu.jpg"  width="auto" height="500vh" class="m-5" alt="Card image cap">
+    </div>
+  </div>
+</div>
+
+
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 1.2rem;color: black;">
+          Our Branches
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Tirupati</a>
+          <a class="dropdown-item" href="#">Visakhapatnam</a>
+          <a class="dropdown-item" href="#">Banglore</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#contactid" style="font-size: 1.2rem;color: black;">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      
+      <!-- <button class="btn btn-outline-primary my-2 my-sm-0 m-4" type="login"style="font-size: 1.2rem;">Login</button> -->
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-success my-2 my-sm-0 m-4" data-toggle="modal" data-target="#exampleModal" style="font-size: 1.2rem;">
+  Login / Create Account
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel">Login / Create Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+   <!--  <label for="exampleInputEmail1" class="mr-4">Email address</label> -->
+    <input type="email" class="form-control m-2" style="width: 90%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Phone Number">
+   <!--  <small id="emailHelp" class="form-text text-muted m-2">We'll never share your email with anyone else.</small> -->
+  </div>
+  <div class="form-group">
+<!--     <label for="exampleInputPassword1" class="mr-3">Password</label> -->
+    <input type="password" class="form-control m-2" style="width: 90%;" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <a href="#"><h6 class="m-2" style="font-size: 0.9rem; ">
+  	forgot password?
+  </h6></a>
+  <button type="submit" class="btn btn-success m-2"  style="width: 90%;">Login</button>
+  <h6 class="m-2">Not a member? <a href="#" style="color: gold" id="signup">Sign-up Now</a></h6>
+  <!-- <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div> -->
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+      
+    </form>
+  </div>
+</nav>
+
+<!--Background-->
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" style="width: auto; height: 60vh;" src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\background2.jpg" alt="First slide">
+    </div>
+    <div class="carousel-caption d-inline d-md-block d-sm-inline-block">
+      
+    <h5 style="font-size: 5rem; font-family: 'Brush Script MT', cursive">Village Ruchulu..!</h5>
+    <span><p style="font-size:2rem; font-family: 'Brush Script MT', cursive">Made with village spices
+    </p>
+  <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\spice.png" width="80" height="80" class="d-inline-block align-top" alt="Village Ruchulu logo"></span>
+  </div> 
+  
+</div>
+<div style="text-align: center;" class="mt-4">
+<span style=" color: black; font-family: 'Brush Script MT',  cursive; font-size: 3rem;">How it works</span>
+</div>
+<div class="row m-5">
+  <div class="col-sm-4">
+    <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\order.png"  width="80" height="80" class="m-5" alt="Card image cap">
+        <h5 class="card-title">Online Order</h5>
+        <p class="card-text">Online order available on swiggy and zomato. Catoring servies for all your functions are also available.</p>
+        <a href="#" class="btn btn-success">Know more</a>
+  </div>
+  <div class="col-sm-4">
+   <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\spices.png"  width="80" height="80" class="m-5" alt="Card image cap">
+        <h5 class="card-title">Made with indian spices</h5>
+        <p class="card-text">All the food items are prepared using indian spices and all spices are imported directly from the villages.</p>
+        <a href="#" class="btn btn-success">Know more</a>
+   
+  </div>
+  <div class="col-sm-4">
+  <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\service.png"  width="80" height="80" class="m-5" alt="Card image cap">
+        <h5 class="card-title">Customer Service</h5>
+        <p class="card-text">24/7 Customer service available to all the food lovers. We are responsible for your comfort and taste.</p>
+        <a href="#" class="btn btn-success">Know more</a>
+    
+  </div>
+</div>
+
+<!--From our menu-->
+<div class="m-5">
+<div style="text-align:center;">
+    <span style=" color: black; font-family: 'Brush Script MT',  cursive; font-size: 2.8rem;">From our menu</span>
+    <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\menuIcon.png" width="55" height="55" class="d-inline-block align-top" alt="logo">
+</div>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row m-4">
+<div class="card col-4 p-4" style="width: 18rem;">
+  <img class="card-img-top" src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\ChickenDumBiriyani.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Chicken Dum Biriyani</h5>
+    <p class="card-text">Succulent pieces of marinated chicken, fragrant basmati rice, and aromatic spices cooked together in perfect harmony, creating a tantalizing medley of flavors and textures.</p>
+    
+  </div>
+</div>
+<div class="card col-4 p-4" style="width: 18rem;">
+  <img class="card-img-top" src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\Biriyani2.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Fry Piece Chicken Biriyani</h5>
+    <p class="card-text">Crispy, golden-fried chicken pieces served atop a bed of flavorful biryani rice, offering a delightful blend of crunch and spice in every bite.</p>
+    
+  </div>
+</div>
+<div class="card col-4 p-4" style="width: 18rem;">
+  <img class="card-img-top" src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\tandoori.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Chicken Tandoori</h5>
+    <p class="card-text">Juicy chicken pieces marinated in a blend of yogurt and spices, roasted to perfection in a tandoor, resulting in smoky, charred, and incredibly tender meat that's bursting with flavor.</p>
+   
+  </div>
+</div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+      <div class="row m-4">
+<div class="card col-4 p-4" style="width: 18rem;">
+  <img class="card-img-top" src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\meals.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Veg Meals</h5>
+    <p class="card-text">A wholesome vegetarian feast featuring a colorful array of fresh vegetables, lentils, and aromatic spices, served with rice or bread, delivering a symphony of flavors and nutrients in every bite.</p>
+    
+  </div>
+</div>
+<div class="card col-4 p-4" style="width: 18rem;">
+  <img class="card-img-top" src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\fishCurry.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Fish Curry</h5>
+    <p class="card-text">A rich and spicy fish curry made with fresh catches of the day, simmered in a luscious coconut or tomato-based sauce, creating a deliciously tangy and satisfying seafood delight.</p>
+    
+  </div>
+</div>
+<div class="card col-4 p-4" style="width: 18rem;">
+  <img class="card-img-top" src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\prawn.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Prawns Curry</h5>
+    <p class="card-text">Plump, succulent prawns cooked in a flavorful curry sauce, with a perfect balance of spices and coconut, providing a mouthwatering seafood experience.</p>
+   
+  </div>
+</div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+      <div class="row m-4">
+<div class="card col-4 p-4" style="width: 18rem;">
+  <img class="card-img-top" src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\SambarRice.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Sambar Rice</h5>
+    <p class="card-text">A South Indian classic that combines steaming hot rice with a hearty lentil-based vegetable stew, offering a harmonious blend of flavors, textures, and spices.</p>
+    
+  </div>
+</div>
+<div class="card col-4 p-4" style="width: 18rem;">
+  <img class="card-img-top" src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\paneerTikka.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Paneer Tikka</h5>
+    <p class="card-text">Cubes of paneer (Indian cheese) marinated in a spicy yogurt mixture, skewered and grilled to perfection, resulting in a charred, smoky, and irresistibly creamy appetizer.</p>
+    
+  </div>
+</div>
+<div class="card col-4 p-4" style="width: 18rem;">
+  <img class="card-img-top" src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\GarlicNaan.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Garlic Naan</h5>
+    <p class="card-text">Soft and fluffy Indian bread infused with aromatic garlic and fresh herbs, perfect for scooping up delectable curries and sauces, making every bite a fragrant and savory delight.</p>
+   
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>
+
+
+<!--About Us-->
+<div style="background-image: linear-gradient(to top,white,#AAEC7A,white);">
+<div style="text-align:center;">
+    <span style=" color: black; font-family: 'Brush Script MT',  cursive; font-size: 2.8rem;">About Us</span>
+    <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\info.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+</div>
+
+<div class="row m-5">
+
+  <div class="col-sm-6 col-6">
+        
+        
+      <div class="card-body " style="font-size:1.2rem;">
+        
+        <p class="card-text mt-3">At Village Ruchulu, we transport you to the heart of India through our authentic Indian cuisine. Our commitment to quality begins in the serene villages of India, where we source the freshest ingredients. What sets us apart is our use of spices directly imported from the source, infusing every dish with true Indian flavors. Our skilled chefs craft a diverse menu, from North Indian tandoori delights to South Indian aromatic curries, providing a culinary journey for your taste buds. We believe in offering not just a meal but an unforgettable dining experience, marked by our warm atmosphere, attentive service, and the ability to customize your meal to your preferences. Join us at Village Ruchulu to savor the essence of India with every bite, and let us take you on a gastronomic journey like no other.</p>
+  
+      </div>
+  
+  </div>
+
+  <div class="col-sm-6 col-6">
+   <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\specials.jpg"  width="400vh" height="400vh" class="m-5" alt="Card image cap">
+   
+  </div>
+
+</div>
+</div>
+
+<!--Customer ratings-->
+
+<div style="text-align:center;">
+<img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\ratings.png" width="64" height="64" class="d-inline-block align-top" alt="logo">
+    <span style=" color: black; font-family: 'Brush Script MT',  cursive; font-size: 2.8rem;">Customer Ratings</span>
+    <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\ratings.png" width="64" height="64" class="d-inline-block align-top" alt="logo">
+</div>
+<div class="container">
+<div class="card-group row m-5">
+  <div class="col-4 col-sm-4">
+      <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\female1.png" width="40" height="40" class="d-inline-block align-top" alt="logo">
+    <span style=" color: black; font-size: 1.3rem;">Supriya Konidela<br>Rating : <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\rating2.png" width="123" height="84" class="d-inline-block align-top" alt="logo"></span>
+      <p class="card-text">The garlic naan at this restaurant is a revelation! It's soft, fluffy, and bursting with garlic flavor. I could smell the tantalizing aroma as soon as it arrived at the table. The perfect accompaniment to any curry or as a snack on its own. A must-try</p>
+  </div>
+  <div class="col-4 col-sm-4">
+      <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\male.png" width="40" height="40" class="d-inline-block align-top" alt="logo">
+    <span style=" color: black; font-size: 1.3rem;">Arjun Daggubati<br>Rating : <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\rating3.png" width="81" height="84" class="d-inline-block align-top" alt="logo"></span>
+      
+      <p class="card-text">The biryani was packed with incredible flavors, and the chicken was tender and well-marinated. The spices were just right, and the overall presentation and aroma were excellent. The only reason I didn't give it a full 5 stars is that I personally prefer my biryani a touch spicier, but it was still a fantastic dish!</p>
+  </div>
+  <div class="col-4 col-sm-4">
+      <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\female2.png" width="40" height="40" class="d-inline-block align-top" alt="logo">
+    <span style=" color: black; font-size: 1.3rem;">Aparna Balamurali<br>Rating : <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\rating2.png" width="123" height="84" class="d-inline-block align-top" alt="logo"></span>
+      
+      <p class="card-text">I keep coming back for the chicken tandoori here because it's consistently excellent. The smoky aroma and well-marinated, juicy chicken make it a top pick. It's the kind of dish that keeps you coming back for more.</p>
+      
+  </div>
+  <div style="align-content: center;">
+  <a href="#">View more-></a>
+  </div>
+</div>
+</div>
+
+
+
+<!--Contact-->
+<div >
+  <!--<span style=" color: black; font-family: 'Brush Script MT',  cursive; font-size: 3rem;">How it works</span>-->
+  <!--<h2 class="p-2" style="text-align: center; color: black; font-family: 'Brush Script MT',  cursive; font-size: 3rem;" id="contactid">Contact Us
+  </h2>
+  <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\ratings.png" width="64" height="64" class="d-inline-block align-top" alt="logo">-->
+  <div style="text-align:center;">
+    <span style=" color: black; font-family: 'Brush Script MT',  cursive; font-size: 2.8rem;" id="contactid">Contact Us</span>
+    <img src="C:\Users\Bolisetti Aswani\Desktop\Websites\images\cus.png" width="50" height="50" class="d-inline-block align-top" alt="logo">
+</div>
+  <div class="row ">
+    <div class="col-md-6 col-12">
+  <form style="max-width: 70%;" class="m-lg-5 m-2">
+    <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="name" style="color: black;padding: 0px 0px 10px 0px;">First Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Your First Name">
+    </div>
+    <br>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="Lname" style="color: black;padding: 0px 0px 10px 0px;">Last Name</label>
+      <input type="text" class="form-control" id="Lname" placeholder="Your Last Name">
+    </div>
+    <br>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="inputEmail4"  style="color: black;padding: 0px 0px 10px 0px;">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <br>
+  </div>
+  <div class="form-row">
+  <div class="form-group col-md-12">
+    <label for="inputAddress"style="color: black; padding: 0px 0px 10px 0px;" >Message</label>
+    <input type="text" class="form-control p-4" id="inputAddress" placeholder="Message">
+  </div>
+  </div>
+  
+  
+  <div style="text-align:center;">
+  <button type="submit" class="btn btn-success col-4" style="black;margin-top: 10px;">Send</button>
+</div>
+
+</form>
+
+</div>
+<!-- get in touch -->
+<div class="col-md-6 col-12 mt-2 p-5" style="color:black; font-size: 18px;">
+  <h3 style="color:black; font-size: 1.5rem;">Get in touch</h3>
+        <h3 style="color:black; font-size: 1.2rem;">Address</h3>
+        <h4 style="color:black; font-size: 1.2rem;">Location : Tirupati, India</h4>
+        <h4 style="color:black; font-size: 1.2rem;">Ph : 9999999999</h4>
+        <h4 style="color:black; font-size: 1.2rem;">Mail : aswanibolisetti@gmail.com</h4>
+        <h4 style="color:black; font-size: 1rem;">Follow us on</h4>
+        <ul class="horizontal-list text-align social-icons col-md-6" style="list-style: none;">
+        <li style="display: inline-block; margin-right: 5px;">
+        <a style="text-decoration: none;" href="#">
+          <img style="display: inline-block; border-radius: 50%; padding: 3px;" src="https://icons.iconarchive.com/icons/danleech/simple/32/facebook-icon.png">
+          
+        </a>  
+
+        </li>
+        <li style="display: inline-block; margin-right: 5px;">
+          <a style="text-decoration: none;" href="#" >
+            <img style="display: inline-block; border-radius: 50%; padding: 3px;" src="https://icons.iconarchive.com/icons/limav/flat-gradient-social/32/Whatsapp-icon.png">
+          </a>
+        </li>
+        <li style="display: inline-block; margin-right: 5px;"> 
+          <a style="text-decoration: none;" href="#">
+            <img style="display: inline-block; border-radius: 50%; padding: 3px; " src="https://icons.iconarchive.com/icons/dakirby309/simply-styled/32/YouTube-icon.png">
+            
+          </a>
+
+        </li>
+      </ul>
+</div>
+</div>
+<div style="text-align:center;">
+<p style="color: black;" class="col-md-6 col-12 m-4">
+Copyright © 2022-2023, Village Ruchulu Restaurant, All Rights Reserved.<br>
+Designed & Developed By: Aswani Web Creations Pvt. Ltd.</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
